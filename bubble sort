@@ -1,0 +1,10 @@
+def bubblesort(arr):
+    for i in range(len(arr)-1,0,-1): #arti -1,0,-1 adalah start, stop, step
+        for j in range(0,len(arr)-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    print(arr)
+angka = [5,10,1,11,3,8,6,9,2,7]
+kata =["aku","diary","baca","catatan","dari"]
+bubblesort(angka)
+bubblesort(kata)
